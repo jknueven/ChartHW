@@ -35,10 +35,19 @@ header{
 .title {
 	text-align:center;
 	h2{
-
+		color:$primaryColor;
 	}
+}
+
+.Pie {
 }
 
 footer{
 	text-align:center;
+	margin-top:40px;
+	border-top:3px solid grey;
+	h4{
+		color:darken($primaryColor,10);
+	}
+	
 }

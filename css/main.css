@@ -26,6 +26,12 @@ header {
 
 .title {
   text-align: center; }
+  .title h2 {
+    color: #886827; }
 
 footer {
-  text-align: center; }
+  text-align: center;
+  margin-top: 40px;
+  border-top: 3px solid grey; }
+  footer h4 {
+    color: #604a1c; }
