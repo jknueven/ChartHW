@@ -1,0 +1,44 @@
+$primaryColor:#886827;
+
+header{
+	background:lighten($primaryColor,30);
+}
+
+.nav {
+	img{
+		height:200px;
+		display: block;
+		margin:auto;
+		padding-top: 30px;
+		fill:white;
+	}
+	ul{
+		list-style:none;
+		display: block;
+		margin-left:38%;
+		li{
+			display: inline-block;
+			font-size: 26px;
+			margin-left: 28px;
+		}
+	}
+	a{
+		color:white;
+		
+	}
+	a:hover{
+			color:darken($primaryColor,10);
+			text-decoration: none;
+	}
+}
+
+.title {
+	text-align:center;
+	h2{
+
+	}
+}
+
+footer{
+	text-align:center;
+}

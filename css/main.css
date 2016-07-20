@@ -1,0 +1,31 @@
+header {
+  background: #d6b572; }
+
+.nav img {
+  height: 200px;
+  display: block;
+  margin: auto;
+  padding-top: 30px;
+  fill: white; }
+
+.nav ul {
+  list-style: none;
+  display: block;
+  margin-left: 38%; }
+  .nav ul li {
+    display: inline-block;
+    font-size: 26px;
+    margin-left: 28px; }
+
+.nav a {
+  color: white; }
+
+.nav a:hover {
+  color: #604a1c;
+  text-decoration: none; }
+
+.title {
+  text-align: center; }
+
+footer {
+  text-align: center; }
