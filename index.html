@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="mtg">
+<head>
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no'>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script src="/node_modules/angular/angular.min.js"></script>
+    <script src="/node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+    <script src="https://use.fontawesome.com/ae699f5e09.js"></script>
+</head>
+<body>
+
+	<header>
+		<div ui-view="nav"></div>
+	</header>
+
+	<main>
+		<div ui-view="main"></div>
+	</main>
+
+	<footer><h3>Thanks go out to MTGDevelopers and Chart.js for their opensource code that made this possible. Also shout out to TheNounProject for the Logo.</h3></footer>
+
+<script src="Chart.js"></script>
+<script src="js/main.js"></script>
+<script src="js/factories/mainFactory.js"></script>
+<script src="js/controllers/homeController.js"></script>
+
+</body>
+</html>
