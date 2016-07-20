@@ -5,9 +5,8 @@ angular.module("mtg").controller("homeController", function(API) {
 	var vm = this;
 
 	var ctx = document.getElementById("myChart");
-    var ctx = document.getElementById("myChart").getContext("2d");
+	var ctx2 = document.getElementById("grChart");
 
-	
 	var cardData = API.getCards();
 
 	cardData.then(function(response){
@@ -21,13 +20,30 @@ angular.module("mtg").controller("homeController", function(API) {
 		var Red = 0;
 		var Green = 0;
 
-	 	 var colorMap = cardData.map(function(cards){
-	 	 	console.log(cards);
+		var cmcMap = cardData.map(function(cards){
+			return cards.cmc;
+		});
+
+		var grChart = new Chart(ctx2, {
+            type: 'bar',
+            data: {
+                labels: [1, 2, 3, 4, 5, 6],
+                datasets: [{
+                    label: 'Maxs',
+                    data: cmcMap,
+                    backgroundColor: 'rgb(73, 187, 197)',
+                    borderColor: '#000000',
+                    borderWidth: 2,
+                },
+                ],
+            },
+        });
+
+	 	var colorMap = cardData.map(function(cards){
+	 	 	
 
 	 	 	if(cards.colors){
 		 	 	cards.colors.forEach(function(color){
-		 	 		console.log(color);
-		 	 		
 
 		 	 	if (color === 'White')
 		 	 	{

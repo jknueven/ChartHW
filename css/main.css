@@ -1,33 +1,41 @@
 header {
   background: #d6b572; }
 
-.nav img {
-  height: 200px;
-  display: block;
-  margin: auto;
-  padding-top: 30px;
-  fill: white; }
+.nav {
+  border-bottom: 2px solid grey; }
+  .nav h1 {
+    color: white;
+    text-align: center;
+    margin-top: -10px;
+    font-family: "Georgia";
+    font-weight: bold; }
+  .nav img {
+    height: 200px;
+    display: block;
+    margin: auto;
+    padding-top: 20px;
+    fill: white; }
+  .nav a {
+    color: white; }
+  .nav a:hover {
+    color: #604a1c;
+    text-decoration: none; }
 
-.nav ul {
-  list-style: none;
-  display: block;
-  margin-left: 38%; }
-  .nav ul li {
-    display: inline-block;
-    font-size: 26px;
-    margin-left: 28px; }
+.text h2 {
+  text-align: center;
+  font-family: "Georgia";
+  color: #886827; }
 
-.nav a {
-  color: white; }
-
-.nav a:hover {
-  color: #604a1c;
-  text-decoration: none; }
-
-.title {
+.text p {
   text-align: center; }
-  .title h2 {
-    color: #886827; }
+
+.charts {
+  margin-top: 20px; }
+  .charts .Pie, .charts .Bar {
+    text-align: center; }
+    .charts .Pie h2, .charts .Bar h2 {
+      color: #886827;
+      font-family: "Georgia"; }
 
 footer {
   text-align: center;
